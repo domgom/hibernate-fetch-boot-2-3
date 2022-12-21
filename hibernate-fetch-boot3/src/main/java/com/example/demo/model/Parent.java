@@ -30,9 +30,6 @@ import static jakarta.persistence.FetchType.EAGER;
 @ToString
 public class Parent {
 
-    private static final int DEFAULT_SCALE = 8;
-    private static final int DEFAULT_PRECISION = 19;
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
